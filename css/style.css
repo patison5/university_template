@@ -151,17 +151,30 @@ input {
 }
 
 .post__btn {
-  width: 300px;
-  padding: 20px 40px;
+  width: 250px;
   font-size: 30px;
   text-align: center;
-  box-shadow: 1px 1px 15px 0px rgba(50, 50, 50, 0.86);
-  border-radius: 5px;
+  box-shadow: 2px 3px 4px 1px rgba(50, 50, 50, 0.16);
+  /*border-image-source: 2px solid linear-gradient(90deg, rgba(221,221,221,1) 0%, rgba(225,225,225,1) 35%, rgba(164,164,164,1) 100%);*/
+  
+  border-radius: 5px !important;
   color: #b73838;
   text-transform: uppercase;
   font-weight: bold;
+  overflow: hidden;
+
 }
 
+.post-btn__text {
+  display: block;
+  padding: 20px 0;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left,  rgba(184,184,184,1), rgba(221,221,221,1), rgba(184,184,184,1));
+  border-width: 2px;
+  background: rgb(249,249,249);
+background: linear-gradient(183deg, #fff 0%, #d5d5d5 100%);
+}
 
 
 .modal {
@@ -232,7 +245,7 @@ input {
   background: rgba(0,0,0,.94);
   color: #bfbfbf;
   text-align: center;
-  display: none; /* block включит модалку */
+  display: block; /* block включит модалку */
 }
 
 .modal-black__slider {
@@ -241,6 +254,7 @@ input {
   display: block;
   /*background: #000;*/
   margin: 0 auto 30px;
+  position: relative;
 }
 
 .modal-black__slider img {
@@ -264,4 +278,23 @@ input {
 
 .modal-black .close__btn {
   background: url('../images/krest.png') no-repeat center center;
+}
+
+
+.arrow__left {
+  background: url(../images/arrow-left.png) no-repeat center center;
+  width: 38px;
+  height: 69px;
+  position: absolute;
+  left: 10px;
+  top: 190px;
+}
+
+.arrow__right {
+  background: url(../images/arrow-right.png) no-repeat center center;
+  width: 38px;
+  height: 69px;
+  position: absolute;
+  right: 10px;
+  top: 190px;
 }
